@@ -21,27 +21,15 @@ colors = {
 for name, rgba in colors.items():
     img = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
-
-    # base transparent water color
     draw.rectangle((0, 0, 16, 16), fill=rgba)
-
-    # subtle gradient
     for y in range(16):
         alpha = int(120 + (y / 15) * 60)
-        color = (
-            rgba[0],
-            rgba[1],
-            rgba[2],
-            alpha
-        )
+        color = (rgba[0], rgba[1], rgba[2], alpha)
         draw.line((0, y, 15, y), fill=color, width=1)
-
-    # small noise
     for i in range(30):
         x = (i * 13) % 16
         y = (i * 7) % 16
         draw.point((x, y), fill=(255, 255, 255, 40))
-
     img.save(OUT / f"{name}.png")
 
 print("Texturas generadas:", ", ".join(sorted(colors.keys())))
