@@ -1,0 +1,48 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:block": {
+    "description": {
+      "identifier": "addon:water_red",
+      "menu_category": {
+        "category": "construction",
+        "group": "itemGroup.name.block"
+      }
+    },
+    "components": {
+      "minecraft:unit_cube": {},
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "water_red",
+          "render_method": "blend"
+        }
+      },
+      "minecraft:collision_box": {
+        "origin": [-8, 0, -8],
+        "size": [16, 16, 16]
+      },
+      "minecraft:pick_collision": {
+        "origin": [-8, 0, -8],
+        "size": [16, 16, 16]
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.5
+      },
+      "minecraft:light_emission": 3,
+      "minecraft:on_step_on": {
+        "event": "addon:apply_strength",
+        "target": "self"
+      }
+    },
+    "events": {
+      "addon:apply_strength": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "effect @a[r=1.5] strength 10 0 true"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

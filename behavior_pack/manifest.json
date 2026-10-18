@@ -1,0 +1,23 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Aguas Nuevas",
+    "description": "10 bloques de agua con efectos al entrar",
+    "uuid": "d7642e13-c0f8-47d2-a96d-16d44517f7c7",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "506ae17d-8d11-4d9a-8262-a8dbb6dd0ede",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "a390b5b8-8366-4d2f-8d22-24fce955b4ef",
+      "version": [1, 0, 0]
+    }
+  ]
+}

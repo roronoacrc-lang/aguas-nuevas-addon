@@ -1,0 +1,18 @@
+{
+  "resource_pack_name": "Aguas Nuevas",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "water_lime": { "textures": "textures/blocks/water_lime" },
+    "water_cyan": { "textures": "textures/blocks/water_cyan" },
+    "water_red": { "textures": "textures/blocks/water_red" },
+    "water_orange": { "textures": "textures/blocks/water_orange" },
+    "water_purple": { "textures": "textures/blocks/water_purple" },
+    "water_lightblue": { "textures": "textures/blocks/water_lightblue" },
+    "water_darkblue": { "textures": "textures/blocks/water_darkblue" },
+    "water_indigo": { "textures": "textures/blocks/water_indigo" },
+    "water_aqua": { "textures": "textures/blocks/water_aqua" },
+    "water_yellow": { "textures": "textures/blocks/water_yellow" }
+  }
+}
